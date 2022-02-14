@@ -10,7 +10,8 @@ public class Main {
             Menus.imprimirMenuOpciones();
             Scanner sc = new Scanner(System.in);
             valorPorTeclado = sc.nextInt();
-            if(valorPorTeclado == 1){
+            if(valorPorTeclado==0) System.out.println("Hasta luego!");
+            else if(valorPorTeclado == 1){
                 int base, exponente, modulo;
 
                 System.out.print("\nBase: ");
@@ -24,9 +25,8 @@ public class Main {
                 OperacionModular op = new OperacionModular(base, exponente, modulo);
                 op.calcularMostrandoPasos();
             }
-            else if(valorPorTeclado==2) System.out.println("Hasta luego!");
             else System.out.println("\nError. Esa opción no existe. Introduce de nuevo la opción.\n");
-        }while(valorPorTeclado!=2);
+        }while(valorPorTeclado!=0);
 
     }
 

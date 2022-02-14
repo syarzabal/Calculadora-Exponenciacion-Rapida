@@ -13,7 +13,7 @@ public class Menus {
 
     public static void imprimirMenuOpciones(){
         System.out.println("¿Qué quieres hacer? \n"+
-                "1. Operacion nueva \n"+
-                "2. Terminar");
+                "0. Terminar\n"+
+                "1. Operacion nueva");
     }
 }
